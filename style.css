@@ -1,7 +1,41 @@
 
 body {
     border: 3px solid black;
+    /* background-image:url(./media/background.jpg); */
+    color:yellow;
+    font-size: 18px;
+    font-weight: bold;
+
+    background: url(./media/background.jpg) no-repeat fixed right center, black url(./media/berchtesgaden.jpg) no-repeat fixed center center;
+    background-size: cover;
 }
+h1{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+      margin-right: 100%;
+      width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-right: 25%;
+        width: 150%;
+      }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+
+  
+
 
 .container{
     position: relative;
@@ -36,7 +70,8 @@ body {
     padding-right: 15%;
     font-size: .8rem;
     /* position:relative; */ /* Transparent */
-    position:static;
+    position:relative;
+
 }
 
 .button{
@@ -50,7 +85,7 @@ body {
     margin-top: 10px;
     padding: 10px;   
     margin: 0 auto 0 auto;  
-
+    z-index:1;
     position: sticky;
     top:0;
 }   
@@ -76,4 +111,11 @@ body {
     .child3{
         padding-left: 5px;
     }
+}
+
+
+/* ANIMATION */
+
+.hello{
+    width: 1080px;
 }
